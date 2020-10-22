@@ -1,0 +1,42 @@
+{
+    "name": "Unity.SimViz.Runtime.Tests",
+    "references": [
+        "UnityEngine.TestRunner",
+        "Unity.Mathematics",
+        "Unity.Collections",
+        "Unity.Burst",
+        "Unity.Entities",
+        "Untiy.SimViz.Tests.Scripts",
+        "Unity.SimViz.Runtime",
+        "Unity.SimViz.Editor",
+        "Unity.Simulation.Core",
+        "Unity.RenderPipelines.HighDefinition.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "PathCreator"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "",
+            "define": "URP_PRESENT"
+        },
+        {
+            "name": "com.unity.render-pipelines.high-definition",
+            "expression": "",
+            "define": "HDRP_PRESENT"
+        }
+    ],
+    "noEngineReferences": false
+}

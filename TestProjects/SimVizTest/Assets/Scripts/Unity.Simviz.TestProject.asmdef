@@ -1,0 +1,7 @@
+﻿{
+	"name": "Unity.SimViz.TestProject",
+    "references": [
+        "Unity.Mathematics",
+        "Unity.SimViz.Runtime"
+    ]
+}

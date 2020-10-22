@@ -1,0 +1,17 @@
+{
+    "name": "Unity.SimViz.TestProject",
+    "references": [
+        "Unity.Mathematics",
+        "Unity.SimViz.Runtime",
+        "PathCreator"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,10 @@
+[submodule "Submodules/com.unity.perception"]
+	path = Submodules/com.unity.perception
+	url = git@github.com:Unity-Technologies/com.unity.perception.git
+[submodule "com.unity.simviz/Submodules/Path-Creator"]
+    path = com.unity.simviz/Submodules/Path-Creator
+    url = git@github.com:mrpropellers/Path-Creator.git
+    	
+[submodule "com.unity.perception"]
+	path = com.unity.perception
+	url = git@github.com:Unity-Technologies/com.unity.perception.git

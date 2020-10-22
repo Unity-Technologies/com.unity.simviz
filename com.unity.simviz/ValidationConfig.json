@@ -1,0 +1,14 @@
+{
+	"SDKFilesValidation":
+	{
+		"ManifestIgnore":
+		[
+			"*/AocAssetBundle/UnityPackageManager/*
+		]
+	},
+
+	"FileContentKeywordValidation":
+	{
+		"TimeoutMins": 7.0
+	}
+}

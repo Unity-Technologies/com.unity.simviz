@@ -1,0 +1,21 @@
+{
+  "placements": [
+    {
+      "type": "Buildings",
+      "path": ["Assets/Studio216/Prefabs/Buildings", "Assets/Studio216/Prefabs"]
+    },
+    {
+      "type": "RoadSigns",
+      "path": ["Assets/RoadArchitect/Prefabs/Interactive"]
+    },
+    {
+      "type": "Signs",
+      "path": ["Assets/RoadArchitect/Prefabs/Signs"]
+    },
+    {
+      "type": "Lights",
+      "path": ["Assets/RoadArchitect/Prefabs/Lights"]
+    }
+  ],
+  "labels": []
+}

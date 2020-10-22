@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 541c5dd9390102a4f80c7a0bd1964b4c, type: 3}
+  m_Name: PolygonSoupPlacementPipeline
+  m_EditorClassIdentifier: 
+  roadNetworkDescription: {fileID: 0}
+  drawPolygons: 1
+  placeBuildings: 1
+  buildingCategory: {fileID: 11400000, guid: 0b438ed7d2f0bf14c8dda96b81f75709, type: 2}
+  buildingSpacing: 0
+  buildingOffset: 20
+  placeTrees: 1
+  treeCategory: {fileID: 11400000, guid: 627c5bd8d61e2c44daf8c00424992f83, type: 2}
+  treeSpacing: 5
+  treeOffset: 4
+  placeStreetLights: 1
+  streetLightCategory: {fileID: 11400000, guid: c64d343d4e3fa82479ee35403447ca4c,
+    type: 2}
+  streetLightSpacing: 40
+  streetLightOffset: 0
+  placeRoadSigns: 1
+  roadSignCategory: {fileID: 11400000, guid: 73384d0a3b85d9146b8d7555ee5b4afb, type: 2}
+  roadSignSpacing: 50
+  roadSignOffset: 0
+  placePoissonTrees: 0
+  poissonTreeSpacing: 10
+  poissonOuterPolygonOffset: 20

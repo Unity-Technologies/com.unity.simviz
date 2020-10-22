@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b583d7495237d2347a2ad4f3e24bfbd4, type: 3}
+  m_Name: SamplePlacementPipeline
+  m_EditorClassIdentifier: 
+  roadNetworkSource: 1
+  roadNetworkDescription: {fileID: -8117065436764865, guid: d6d2b0a0a4654b34e970dc302d7270f8,
+    type: 3}
+  splineBasedRoadNetwork: {fileID: 4950152628823847720, guid: 41815a7b1203add438336cc42a796977,
+    type: 3}
+  createRoadMesh: 1
+  drawRoadOutline: 1
+  roadMaterial: {fileID: 2100000, guid: cd81bf4668169ab4cb47c2c3d44bc952, type: 2}
+  uvMultiplier: 1
+  BorderLaneType: 0
+  MinimumPolygonArea: 800
+  ExtensionDistance: 0.1
+  placeBuildings: 1
+  buildingCategory: {fileID: 11400000, guid: 5975af0789a8a4f45ba4cd9849843d0e, type: 2}
+  buildingSpacing: 30
+  buildingOffset: 15
+  buildingLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  placeTrees: 1
+  treeCategory: {fileID: 11400000, guid: 4f60987d63e5f494eb201f0c5eaf20eb, type: 2}
+  treeSpacing: 10
+  treeOffset: 3
+  treeLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  placeStreetLights: 0
+  streetLightCategory: {fileID: 0}
+  streetLightSpacing: 0
+  streetLightOffset: 0
+  streetLightLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  placeRoadSigns: 0
+  roadSignCategory: {fileID: 0}
+  roadSignSpacing: 0
+  roadSignOffset: 0
+  signLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  placePoissonTrees: 0
+  poissonTreeSpacing: 0
+  innerPoissonPolygonOffset: 0
+  outerPoissonPolygonOffset: 0
+  areaTreeLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
