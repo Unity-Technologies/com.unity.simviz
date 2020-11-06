@@ -3,7 +3,7 @@
 	{
 		"manifestIgnore":
 		[
-			"*/AocAssetBundle/UnityPackageManager/manifest.json"
+			"*/AocAssetBundle/UnityPackageManager/*"
 		]
 	},
 
