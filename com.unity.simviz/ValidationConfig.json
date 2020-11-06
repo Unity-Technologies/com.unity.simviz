@@ -1,9 +1,9 @@
 {
 	"SDKFilesValidation":
 	{
-		"ManifestIgnore":
+		"manifestIgnore":
 		[
-			"*/AocAssetBundle/UnityPackageManager/*
+			"*/AocAssetBundle/UnityPackageManager/*"
 		]
 	},
 
