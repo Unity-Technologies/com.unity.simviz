@@ -40,29 +40,29 @@ projects:
 {% endfor %} 
 {% endfor %}
 
-{% for editor in test_editors %}
-{% for suite in suites %}
-codecoverage_windows_{{suite.name}}_{{editor.version}}:
-  name : CodeCoverage {{ suite.display_name }} tests ({{ editor.version }}, Windows)
-  agent:
-    type: Unity::VM
-    image: package-ci/win10:stable
-    flavor: b1.large
-  commands:
-    - git submodule update --init --recursive
-    - unity-downloader-cli -u {{ editor.version }} -c editor -c StandaloneSupport-IL2CPP -c Linux --wait --published
-    - C:/build/output/unity/simviz/.Editor/Unity.exe -projectPath C:/build/output/unity/simviz/TestProjects/SimVizTest -testPlatform editmode -runTests -automated -testResults test-results -debugCodeOptimization -enableCodeCoverage -coverageResultsPath test-results -coverageOptions enableCyclomaticComplexity;generateHtmlReport;generateBadgeReport; assemblyFilters:Unity.SimViz.Editor;Unity.SimViz.Runtime;Unity.SimViz.Sensors; 
-    - C:/build/output/unity/simviz/.Editor/Unity.exe -projectPath C:/build/output/unity/simviz/TestProjects/SimVizTest -testPlatform playmode -runTests -automated -testResults test-results -debugCodeOptimization -enableCodeCoverage -coverageResultsPath test-results -coverageOptions enableCyclomaticComplexity;generateHtmlReport;generateBadgeReport; assemblyFilters:Unity.SimViz.Editor;Unity.SimViz.Runtime;Unity.SimViz.Sensors;
-  #  - C:/build/output/unity/simviz/.Editor/Unity.exe -projectPath C:/build/output/unity/simviz/TestProjects/SimVizTest -debugCodeOptimization -enableCodeCoverage -coverageResultsPath test-results -coverageOptions enableCyclomaticComplexity;generateHtmlReport;generateBadgeReport;
-  artifacts:
-    logs:
-      paths:
-        - "test-results/**/*"
-        - "TestProjects/SimVizTest/test-results/**/*"
-  dependencies:
-    - .yamato/upm-ci-full.yml#pack_SimViz
-{% endfor %} 
-{% endfor %}
+# {% for editor in test_editors %}
+# {% for suite in suites %}
+# codecoverage_windows_{{suite.name}}_{{editor.version}}:
+#   name : CodeCoverage {{ suite.display_name }} tests ({{ editor.version }}, Windows)
+#   agent:
+#     type: Unity::VM
+#     image: package-ci/win10:stable
+#     flavor: b1.large
+#   commands:
+#     - git submodule update --init --recursive
+#     - unity-downloader-cli -u {{ editor.version }} -c editor -c StandaloneSupport-IL2CPP -c Linux --wait --published
+#     - C:/build/output/unity/simviz/.Editor/Unity.exe -projectPath C:/build/output/unity/simviz/TestProjects/SimVizTest -testPlatform editmode -runTests -automated -testResults test-results -debugCodeOptimization -enableCodeCoverage -coverageResultsPath test-results -coverageOptions enableCyclomaticComplexity;generateHtmlReport;generateBadgeReport; assemblyFilters:Unity.SimViz.Editor;Unity.SimViz.Runtime;Unity.SimViz.Sensors; 
+#     - C:/build/output/unity/simviz/.Editor/Unity.exe -projectPath C:/build/output/unity/simviz/TestProjects/SimVizTest -testPlatform playmode -runTests -automated -testResults test-results -debugCodeOptimization -enableCodeCoverage -coverageResultsPath test-results -coverageOptions enableCyclomaticComplexity;generateHtmlReport;generateBadgeReport; assemblyFilters:Unity.SimViz.Editor;Unity.SimViz.Runtime;Unity.SimViz.Sensors;
+#   #  - C:/build/output/unity/simviz/.Editor/Unity.exe -projectPath C:/build/output/unity/simviz/TestProjects/SimVizTest -debugCodeOptimization -enableCodeCoverage -coverageResultsPath test-results -coverageOptions enableCyclomaticComplexity;generateHtmlReport;generateBadgeReport;
+#   artifacts:
+#     logs:
+#       paths:
+#         - "test-results/**/*"
+#         - "TestProjects/SimVizTest/test-results/**/*"
+#   dependencies:
+#     - .yamato/upm-ci-full.yml#pack_SimViz
+# {% endfor %} 
+# {% endfor %}
 
 {% for editor in test_editors %}
 {% for suite in suites %}
